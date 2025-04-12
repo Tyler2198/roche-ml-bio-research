@@ -94,17 +94,51 @@ It is based on the biological principle that:
 | **Contrastive Models** | Learn embeddings where proteins with similar function are closer |
 
 ---
+- Immunogenicity modeling
+**Immunogenicity** refers to the ability of a substance — especially a **therapeutic protein or biologic drug** — to provoke an **immune response** in the body.
 
-## 🔗 Tools & Datasets
-
-- **AlphaFold DB** — 3D structures for millions of proteins  
-- **PDB (Protein Data Bank)** — Gold standard for experimental 3D structures  
-- **UniProt** — Annotated protein sequences with functional data  
-- **ESM (Meta)** — Transformer-based models for protein sequence embeddings  
-- **D-SCRIPT / DeepFRI / ProtCNN** — Deep learning models for function prediction  
+In drug development, this is a **double-edged sword**:
+- **Good** in vaccines (you *want* a strong immune response)
+- **Bad** in biologics (immune reaction can **neutralize the drug**, reduce efficacy, or cause side effects)
 
 ---
-- Immunogenicity modeling
+
+## 🔬 What is Immunogenicity Modeling?
+
+**Immunogenicity modeling** involves building **computational tools and machine learning models** to **predict** whether a protein or peptide is likely to trigger an immune response — particularly the **adaptive immune system** (e.g., T cells, antibodies).
+
+---
+
+## 🧪 Why It Matters
+
+| Risk | Impact |
+|------|--------|
+| **Neutralizing antibodies** | Can deactivate therapeutic proteins |
+| **Hypersensitivity reactions** | May lead to serious side effects or treatment discontinuation |
+| **Low efficacy** | Immune clearance lowers drug concentration |
+| **Regulatory concern** | EMA & FDA require strong immunogenicity risk assessments |
+
+---
+
+## 🔍 Modeling Focus Areas
+
+| Task | Description |
+|------|-------------|
+| **Epitope Prediction** | Identify peptide regions likely to be presented by MHC molecules and recognized by T cells |
+| **MHC Binding Affinity** | Predict how strongly a peptide binds to MHC Class I or II |
+| **T-cell Receptor (TCR) Reactivity** | Model the likelihood that a TCR recognizes a presented peptide |
+| **Sequence Liability Scanning** | Identify mutations or regions increasing immunogenic risk |
+| **Deimmunization** | Suggest edits to reduce immunogenicity while preserving function |
+
+---
+## 🧬 Application to Large Molecule Drug Development (LMDD)
+
+- Predict and reduce **immunogenic hotspots** in **monoclonal antibodies**, **fusion proteins**, or **enzymes**
+- Screen out **candidate biologics** with high immune risk before animal/human testing
+- Enable **in silico deimmunization pipelines**
+- Use **foundational models** to represent sequence-structure-immune properties
+
+---
 - Multi-omics integration
 - Binding site identification
 
