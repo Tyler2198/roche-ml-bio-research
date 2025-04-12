@@ -52,6 +52,58 @@ Their mission is to enable **autonomous scientific discovery** through deeply in
 ---
 
 - Protein structure-function prediction
+**Protein structure-function prediction** is the task of using computational methods — especially **machine learning** and **molecular modeling** — to predict how a protein's **structure** (its 3D shape) determines or influences its **function** (what it does in the body).
+
+It is based on the biological principle that:
+
+> **"Structure determines function."**  
+> A protein's 3D conformation directly governs how it interacts with other molecules, which defines its role in biological processes.
+
+---
+
+## 🧬 Key Concepts
+
+| Concept | Description |
+|--------|-------------|
+| **Primary structure** | The raw amino acid sequence (FASTA format) |
+| **Secondary/tertiary structure** | Local folding patterns (e.g., alpha helices, beta sheets) and the full 3D shape |
+| **Function** | What the protein does: binding, signaling, catalysis, structural support, etc. |
+| **Prediction Goal** | Infer a protein’s function based on its sequence or predicted structure |
+
+---
+
+## 🧪 Use Cases in Drug Discovery
+
+| Application | Description |
+|-------------|-------------|
+| **Target Identification** | Predict if a protein is involved in a disease pathway |
+| **Binding Site Prediction** | Identify potential pockets for drug docking or ligand binding |
+| **Mutational Impact Modeling** | Understand how mutations affect protein stability/function (e.g., in rare diseases or cancer) |
+| **Antibody Design** | Predict the binding efficiency of antibody-antigen interactions |
+| **Synthetic Protein Engineering** | Design novel proteins with specific activities or stability profiles |
+
+---
+
+## 🤖 ML Models Used
+
+| Model Type | Role |
+|------------|------|
+| **Protein LLMs (e.g., ESM-2, ProtBERT, ProtT5)** | Learn representations from sequences to predict structure/function |
+| **AlphaFold 2 / 3** | Predict 3D structure from amino acid sequence |
+| **Graph Neural Networks (GNNs)** | Represent 3D atomic structure to predict function or interaction |
+| **Contrastive Models** | Learn embeddings where proteins with similar function are closer |
+
+---
+
+## 🔗 Tools & Datasets
+
+- **AlphaFold DB** — 3D structures for millions of proteins  
+- **PDB (Protein Data Bank)** — Gold standard for experimental 3D structures  
+- **UniProt** — Annotated protein sequences with functional data  
+- **ESM (Meta)** — Transformer-based models for protein sequence embeddings  
+- **D-SCRIPT / DeepFRI / ProtCNN** — Deep learning models for function prediction  
+
+---
 - Immunogenicity modeling
 - Multi-omics integration
 - Binding site identification
