@@ -49,6 +49,7 @@ Roche — and its AI-first biotech unit **Prescient Design** — are at the fore
 - **Agents** capable of retrieving, reasoning, and designing across complex biological datasets
 
 Their mission is to enable **autonomous scientific discovery** through deeply integrated AI and domain-specific biological modeling.
+---
 
 - Protein structure-function prediction
 - Immunogenicity modeling
